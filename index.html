@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-sans antialiased">
+    <!-- Header Section -->
+    <header
+      class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 fixed w-full top-0 z-10 shadow-lg transition-all duration-300 ease-in-out"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Oladapo</h1>
+        <nav>
+          <ul class="hidden md:flex space-x-6">
+            <li>
+              <a href="#home" class="hover-underline hover:text-gray-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="hover-underline hover:text-gray-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover-underline hover:text-gray-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="md:hidden">
+            <button id="menuButton" class="text-white focus:outline-none">
+              <div class="hamburger-icon">
+                <span class="block w-6 h-0.5 bg-white mb-1"></span>
+                <span class="block w-6 h-0.5 bg-white mb-1"></span>
+                <span class="block w-6 h-0.5 bg-white"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="h-screen bg-cover bg-center flex items-center justify-center relative"
+      style="background-image: url('images/hero-background.jpg')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div
+        class="container mx-auto text-center text-white relative z-10 fade-in"
+      >
+        <h2 class="text-5xl font-bold animate-pulse">Hello, I'm Your Name</h2>
+        <p class="mt-4 text-xl animate-fadeIn">Welcome to my portfolio</p>
+        <a
+          href="#projects"
+          class="mt-6 inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-6 rounded-lg btn-custom"
+          >View My Projects</a
+        >
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8 fade-in">My Skills</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
+          <div
+            class="p-6 bg-white shadow-md rounded hover:shadow-xl hover:bg-blue-50 transition-transform transform hover:scale-105"
+          >
+            <img
+            src=https://th.bing.com/th/id/OIP.0F4YvmgQUGz9WwE3eJU_ZgAAAA?rs=1&pid=ImgDetMain
+            alt="HTML Icon" class="w-12 h-12 mb-4 mx-auto" />
+            <h4 class="text-xl font-semibold mb-4">HTML & CSS</h4>
+            <p>
+              Building responsive websites with HTML5 and modern CSS techniques.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-white shadow-md rounded hover:shadow-xl hover:bg-blue-50 transition-transform transform hover:scale-105"
+          >
+            <img
+              src="javascript.jpg"
+              alt="JavaScript Icon"
+              class="w-12 h-12 mb-4 mx-auto"
+            />
+            <h4 class="text-xl font-semibold mb-4">JavaScript</h4>
+            <p>Interactive web development using vanilla JS and frameworks.</p>
+          </div>
+          <div
+            class="p-6 bg-white shadow-md rounded hover:shadow-xl hover:bg-blue-50 transition-transform transform hover:scale-105"
+          >
+            <img
+              src="tailwind,jpg.jpeg"
+              alt="Tailwind CSS Icon"
+              class="w-12 h-12 mb-4 mx-auto"
+            />
+            <h4 class="text-xl font-semibold mb-4">TailwindCSS</h4>
+            <p>Creating custom designs with Tailwind utility-first classes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8 fade-in">Projects</h3>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in"
+        >
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="Project1.jpg"
+              alt="Project 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-semibold mb-2">Project 1</h4>
+              <p>A short description of the project goes here.</p>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="Project 2.jpg"
+              alt="Project 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-semibold mb-2">Project 2</h4>
+              <p>A short description of the project goes here.</p>
+            </div>
+          </div>
+          <div
+            class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src="Project3.jpg"
+              alt="Project 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h4 class="text-xl font-semibold mb-2">Project 3</h4>
+              <p>A short description of the project goes here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-8 fade-in">Contact Me</h3>
+        <form
+          class="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg fade-in"
+        >
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="w-full px-4 py-2 border rounded-lg"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="email"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-4 py-2 border rounded-lg"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="message"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              class="w-full px-4 py-2 border rounded-lg"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 text-white py-2 rounded-lg btn-custom"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-white transition-colors duration-300"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
